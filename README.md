@@ -7,6 +7,14 @@ One page holds only a textbox and the other conatains downloadable content.
 
 In the project directory, you can run:
 
+### `npm run deploy`
+
+Runs the app on port 80\
+Open [http://localhost:80](http://localhost:80) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
 ### `npm start`
 
 Runs the app in the development mode.\
