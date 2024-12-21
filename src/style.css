@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("../public/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: right center;
+  color: white;
+}
+
+h1,
+h2 {
+  color: #e63946;
+}
+
+.header-container {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 90%;
+  width: 400px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.header-title {
+  font-size: 2em;
+  color: #d2232a;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.steam-key {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 20px;
+    margin: 10px auto;
+  }
+
+  .header-title {
+    font-size: 1.8em;
+  }
+
+  .steam-key {
+    font-size: 1.2em;
+    padding: 8px;
+  }
+}
+
+button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #d62828;
+}
+
+nav h2 {
+  margin: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #457b9d;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.gift-container {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 90%;
+  width: 400px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+.gift-title {
+  font-size: 2em;
+  color: #d2232a;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.gift-text {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.download-button {
+  background-color: #e63946;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #d62828;
+}
+
+.download-button:active {
+  background-color: #d62828;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .gift-container {
+    padding: 20px;
+    margin: 10px auto;
+  }
+
+  .gift-title {
+    font-size: 1.8em;
+  }
+
+  .gift-text {
+    font-size: 1em;
+  }
+
+  .download-button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}

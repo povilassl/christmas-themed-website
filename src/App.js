@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import "./style.css";
+import TextScreen from "./screens/TextScreen";
+import DownloadableContentScreen from "./screens/DownloadableContentScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="header-container" r>
+              <h1>🎄 Merry Christmas! 🎅</h1>
+              <div>
+                <Link to="/downloadable-content">
+                  <button style={{ margin: "10px" }}>🎁 Go to Path 1 🎁</button>
+                </Link>
+                <Link to="/text">
+                  <button style={{ margin: "10px" }}>🎁 Go to Path 2 🎁</button>
+                </Link>
+              </div>
+            </div>
+          }
+        />
+
+        <Route path="/text" element={<TextScreen />} />
+
+        <Route
+          path="/downloadable-content"
+          element={<DownloadableContentScreen />}
+        />
+      </Routes>
     </div>
   );
 }
